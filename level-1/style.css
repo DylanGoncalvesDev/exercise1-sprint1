@@ -24,7 +24,6 @@
   background-color: black;
   display: flex;
   flex-direction: column;
-  flex: 1;
   padding: 1rem;
   gap: 1rem;
 }
@@ -33,7 +32,6 @@
   background-color: rgb(59, 68, 88);
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   gap: 1rem;
 
@@ -69,11 +67,10 @@
 .banner-container {
   padding: 1rem;
   background-color: rgb(255, 174, 0);
-  flex: 1;
 }
 
 .banner-content {
-  min-height: 4rem;
+  min-height: 5rem;
   display: flex;
   align-items: center;
   padding-left: 0.5rem;
@@ -89,14 +86,12 @@
   background-color: black;
   padding: 1rem;
   gap: 1rem;
-  flex: 2;
 }
 
 .articles-container {
   background-color:rgb(59, 68, 88);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-content: start;
   gap: 1rem;
   padding: 1rem;
 }
@@ -167,11 +162,12 @@
 
 @media (max-width: 380px ) {
    .articles-container {
-     display: flex;
-     flex-direction: column;
-     align-items: stretch;
+     grid-template-columns: 1fr;
    }
-  
+   
+   .navigation{
+    grid-column: 1;
+   }
 }
   
   
